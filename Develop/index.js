@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -203,6 +204,11 @@ Feel free to reach me at ${promptResponse.Email} for any questions regarding thi
 
 `
 console.log(readmeTEXT)
+fs.writeFileSync("README.md",readmeTEXT,function(err){
+    if(err) throw err;
+    console.log("- File Generated --")
+})
+
     })
 
    
