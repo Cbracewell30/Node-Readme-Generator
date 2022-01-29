@@ -1,14 +1,14 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Read me Generarator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Christopher Bracewell",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^6.5.2"
   }
 }
