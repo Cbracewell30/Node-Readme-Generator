@@ -157,7 +157,7 @@ function writeToFile(fileName, data) { }
 function init() {
     promptUser()
     .then(promptResponse => {
-        // console.log(promptResponse)
+        console.log(promptResponse)
         var readmeTEXT = `
 # ${promptResponse.title}
 
@@ -202,9 +202,10 @@ Langues used in this project include ${promptResponse.languages}
 Feel free to reach me at ${promptResponse.Email} for any questions regarding this project.
 
 `
+console.log(readmeTEXT)
     })
 
-    console.log(readmeTEXT)
+   
     
 }
 
