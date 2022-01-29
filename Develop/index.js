@@ -5,75 +5,88 @@ const inquirer = require('inquirer');
 const questions = [
     'What is your name?',
     'What is the name of your repository',
-    'Please describe your project'
+    'Please describe your project',
+    'What Technology did you use?'
+
 ];
+// assigning the question in the array.
+const [nameQues, repoNameQues, projDescQues, techQues] = questions
 
-const [nameQues, repoNameQues, projDescQues] = questions
 
-
-
+// Creating user info prompt
 const promptUser = () => {
-   return inquirer.prompt([
-{
-   name: 'Name (Required)',
-   message: nameQues,
-   validate: nameInput => {
-       if(nameInput){
-        console.log(nameInput)
-           return true
-           
-       }
-       else{
-        console.log('Please enter your name!')
-        return false
-       }
-   }
-}
-   ])
-};
-
-const projectPrompt = () => {
+    // getting the inquerier functionality
     return inquirer.prompt([
-{
-    name: 'Repository Name (Required)',
-    message: repoNameQues,
-    validate: repoNameInput => {
-        if(repoNameInput){
-            return true
-        }
-        else{
-         console.log('Please enter your Repository name!')
-         return false
-        }
-    }
-},
-  {  
-    name: 'Repository Description(Required)',
-    message: projDescQues,
-    validate: descripInput => {
-        if(descripInput){
-            return true
-        }
-        else{
-         console.log('Please enter your name!')
-         return false
-        }
-    }
+        {
+            // Question prompt info
+            name: 'Name (Required)',
+            message: nameQues,
+            validate: nameInput => {
+                // validating that the question was answered.
+                if (nameInput) {
 
-  }
-  
-])
+                    return true
+
+                }
+                else {
+                    // if the question wasn't answered log the message
+                    console.log('Please enter your name!')
+                    return false
+                }
+            }
+        },
+        {
+            name: 'Repository Name (Required)',
+            message: repoNameQues,
+            validate: repoNameInput => {
+                if (repoNameInput) {
+                    return true
+                }
+                else {
+                    return false
+                }
+            }
+        },
+        {
+            name: 'Repository Description(Required)',
+            message: projDescQues,
+            validate: descripInput => {
+                if (descripInput) {
+                    return true
+                }
+                else {
+                    console.log('Please enter your name!')
+                    return false
+                }
+            }
+
+        },
+        {
+            type: 'checkbox',
+            name: 'languages',
+            message: techQues,
+            choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+        }
+
+    ])
 };
 
-const results = () => console.log(nameInput);
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    promptUser()
+    .then(promptResponse => {
+        console.log(promptResponse)
+    })
+}
 
 // Function call to initialize app
 init();
-promptUser()
-.then(projectPrompt)
+
+
+
+

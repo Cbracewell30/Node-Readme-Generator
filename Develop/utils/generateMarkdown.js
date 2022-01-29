@@ -1,4 +1,14 @@
+const fs = require('fs');
+
+const writeFile = fileContent => {
 // TODO: Create a function that returns a license badge based on which license is passed in
+fs.writeFile('./dist/READ.md',, )
+// If there is no license, return an empty string
+function renderLicenseBadge(license) {}
+
+}
+// TODO: Create a function that returns a license badge based on which license is passed in
+fs.writeFile('./dist/')
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
 
