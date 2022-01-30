@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const fs = require('fs')
+const fs = require('fs');
+const generatePage = require('./src/page-template');
+
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -16,11 +18,21 @@ const questions = [
     "Email address"
 ];
 // assigning the question in the array.
-const [titleQues, userNameQues,projDescQues, licensQues,techQues,installationQues,usageQues,contribQues,testQuest,emailQues] = questions
+const [titleQues, 
+    userNameQues,
+    projDescQues,
+    licensQues,
+    techQues,
+    installationQues,
+    usageQues,
+    contribQues,
+    testQuest,
+    emailQues,
+    ] = questions
 
 
 // Creating user info prompt
-const promptUser = () => {
+const promptUser = projectData => {
     // getting the inquerier functionality
     return inquirer.prompt([
         {
@@ -157,64 +169,10 @@ function writeToFile(fileName, data) { }
 // TODO: Create a function to initialize app
 function init() {
     promptUser()
-    .then(promptResponse => {
-        console.log(promptResponse)
-        var readmeTEXT = `
-# ${promptResponse.title}
-
-## Description
-${promptResponse.Description}
-
-### Table Of Contents
-* [License](#license)
-* [Github](#github)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributors](#contributors)
-* [Test](#test)
-* [Languages](#languages)
-* [Email](#Email)
-      
-
-#### License
-![GitHub license](https://img.shields.io/badge/license-${promptResponse.License}-blue.svg)
-
-#### Installation
-${promptResponse.Installation}
-
-#### Github
-[Check out my github](https://github.com/${promptResponse.Repository})
-
-#### Usage 
-${promptResponse.Usage}
-
-#### Contributors
-${promptResponse.Contributors}
-
-
-#### Test
-${promptResponse.Test}
-
-#### Languages
-
-Langues used in this project include ${promptResponse.languages}
-
-#### Email
-Feel free to reach me at ${promptResponse.Email} for any questions regarding this project.
-
-`
-console.log(readmeTEXT)
-fs.writeFileSync("README.md",readmeTEXT,function(err){
-    if(err) throw err;
-    console.log("- File Generated --")
-})
-
+    .then(portfolioData => {
+        return generatePage(portfolioData);
     })
-
-   
-    
-}
-
+};
 // Function call to initialize app
 init();
 
