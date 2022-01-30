@@ -1,8 +1,8 @@
 
-# ter
+# Readme Generator 
 
 ## Description
-undefined
+This project allows developers to create a well crafted redme for their projects.
 
 ### Table Of Contents
 * [License](#license)
@@ -19,16 +19,16 @@ undefined
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 #### Installation
-npm i
+NPM Inquirer
 
 #### Github
-[Check out my github](https://github.com/uYTRRe)
+[Check out my github](https://github.com/Cbracewell30)
 
 #### Usage 
 Free
 
 #### Contributors
-Chris
+Christopher Bracewell
 
 
 #### Test
@@ -36,8 +36,8 @@ Manual
 
 #### Languages
 
-Langues used in this project include 
+Langues used in this project include JavaScript,HTML,CSS,ES6,Node
 
 #### Email
-Feel free to reach me at as, for any questions regarding this project.
+Feel free to reach me at CHRISBRACEWELL35@GMAIL.COM for any questions regarding this project.
 

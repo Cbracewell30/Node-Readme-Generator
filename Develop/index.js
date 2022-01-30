@@ -163,7 +163,7 @@ function init() {
 # ${promptResponse.title}
 
 ## Description
-${promptResponse.projDescQues}
+${promptResponse.Description}
 
 ### Table Of Contents
 * [License](#license)
