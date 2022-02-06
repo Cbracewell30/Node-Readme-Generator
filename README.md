@@ -2,7 +2,7 @@
 # Readme Generator 
 
 ## Description
-This project allows developers to create a well crafted redme for their projects.
+This project allows developers to create a well crafted readme's for their projects.
 
 ### Table Of Contents
 * [License](#license)
