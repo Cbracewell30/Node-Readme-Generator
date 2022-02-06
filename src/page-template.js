@@ -3,7 +3,7 @@ const fs = require('fs');
 module.exports = promptResponse => {
     console.log(promptResponse)
     var readmeTEXT = `
-# ${promptResponse.title}
+# ${promptResponse.title}   ![GitHub license](https://img.shields.io/badge/license-${promptResponse.License}-blue.svg)
 
 ## Description
 ${promptResponse.Description}
@@ -25,15 +25,11 @@ ${promptResponse.Description}
 #### Installation
 ${promptResponse.Installation}
 
-#### Github
-[Check out my github](https://github.com/${promptResponse.Repository})
-
 #### Usage 
 ${promptResponse.Usage}
 
 #### Contributors
 ${promptResponse.Contributors}
-
 
 #### Test
 ${promptResponse.Test}
@@ -41,6 +37,10 @@ ${promptResponse.Test}
 #### Languages
 
 Langues used in this project include ${promptResponse.languages}
+
+                                 ##Questions
+#### Github
+[Check out my github](https://github.com/${promptResponse.Repository})
 
 #### Email
 Feel free to reach me at ${promptResponse.Email} for any questions regarding this project.
