@@ -41,5 +41,8 @@ Langues used in this project include JavaScript,HTML,CSS,ES6,Node
 #### Email
 Feel free to reach me at CHRISBRACEWELL35@GMAIL.COM for any questions regarding this project.
 
-#### Link
+#### Links
+##### Github:
 (https://github.com/Cbracewell30/Node-Readme-Generator)
+##### Tutorial:
+(https://watch.screencastify.com/v/nF6n0AriX8AxfMJpGgKZ)
