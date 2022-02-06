@@ -1,8 +1,8 @@
 
-# Chriis   ![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)
+# Readme Generator   ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
-nciofcnif
+Readme generator helps developers create quality readme quickly.
 
 ### Table Of Contents
 * [License](#license)
@@ -16,28 +16,28 @@ nciofcnif
   
 
 #### License
-![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 #### Installation
-ivurcef d
+NPM Inquirer 
 
 #### Usage 
-iovce fx
+Free
 
 #### Contributors
-v5n4 ct
+Christopher Bracewell
 
 #### Test
-v5t4crxe
+manual
 
 #### Languages
 
-Langues used in this project include JavaScript,HTML,CSS,ES6,jQuery,Bootstrap,Node
+Langues used in this project include HTML,ES6,Node
 
                                  ##Questions
 #### Github
-[Check out my github](https://github.com/kj c')
+[Check out my github](https://github.com/Cbracewell30)
 
 #### Email
-Feel free to reach me at vccxnrkn@gmail.com for any questions regarding this project.
+Feel free to reach me at chrisbracewell35@gmail.com for any questions regarding this project.
 
